@@ -25,6 +25,14 @@ services:
   rabbitmq:
     image: rabbitmq:3-management
     ports:
-      - 5672:5672
-      - 5673:5673
+      - 25672:5672
+      - 25673:5673
       - 15672:15672
+
+  mysql:
+    image: mysql
+    ports:
+      - 23306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: ms_admin

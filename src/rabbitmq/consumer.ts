@@ -15,7 +15,7 @@ class Consumer extends EventEmitter {
 
     async connect() {
         try {
-            this.connection = await amqp.connect('amqp://localhost:5672');
+            this.connection = await amqp.connect('amqp://localhost:25672');
             await this.createChannel();
             this.emit('initialized');
         } catch (error) {
