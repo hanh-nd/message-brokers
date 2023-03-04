@@ -4,6 +4,7 @@ Installation
 
 ```bash
 $ yarn
+$ docker compose up -d
 ```
 
 Development
